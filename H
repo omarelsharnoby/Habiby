@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مفاجأة لشهد 💖</title>
+<style>
+  body {
+    margin:0; 
+    font-family: 'Cairo', sans-serif; 
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    display:flex; 
+    justify-content:center; 
+    align-items:center; 
+    height:100vh;
+    flex-direction:column;
+    color:#fff;
+    text-align:center;
+  }
+  h1 {font-size: 2.5em;}
+  p {font-size: 1.2em;}
+  input {padding:12px; border-radius:8px; border:none; margin-top:20px; font-size:16px;}
+  button {padding:12px 25px; margin-top:15px; border:none; border-radius:8px; background:#fff; color:#ff6f91; font-weight:bold; cursor:pointer; font-size:16px;}
+</style>
+</head>
+<body>
+<h1>مسا يا كبير 💖</h1>
+<p>ادخلي الرقم السري عشان مزعلكيش ✨</p>
+<input type="password" id="pass" placeholder="أكتبي هنا">
+<button onclick="checkPass()">دخول</button>
+
+<script>
+  function checkPass(){
+    const pass = document.getElementById('pass').value;
+    if(pass === '2132004'){ // الباسوورد اللي اخترته
+      window.location.href='surprise.html';
+    } else {
+      alert(  غلط يا هبلة 😅');
+    }
+  }
+</script>
+</body>
+</html>
